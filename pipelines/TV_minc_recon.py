@@ -9,8 +9,8 @@ from pydpiper.core.files import FileAtom
 from pydpiper.minc.files import MincAtom
 from pydpiper.minc.registration import autocrop, create_quality_control_images
 
-from tissue_vision.arguments import deep_segment_parser, stacks_to_volume_parser, autocrop_parser
-from tissue_vision.reconstruction import deep_segment, stacks_to_volume
+from core.arguments import deep_segment_parser, stacks_to_volume_parser, autocrop_parser
+from core.reconstruction import deep_segment, stacks_to_volume
 
 def tv_recon_pipeline(options):
     output_dir = options.application.output_directory

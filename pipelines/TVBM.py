@@ -14,7 +14,7 @@ from pydpiper.minc.registration import autocrop, create_quality_control_images, 
 from pydpiper.pipelines.MBM import mbm, mk_mbm_parser
 from pydpiper.pipelines.MAGeT import Interpolation
 
-from tissue_vision.arguments import consensus_to_atlas_parser
+from core.arguments import consensus_to_atlas_parser
 
 def get_imgs(options):
     if options.files:

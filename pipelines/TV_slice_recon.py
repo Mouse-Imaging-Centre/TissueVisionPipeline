@@ -10,8 +10,8 @@ from pydpiper.core.stages import Stages, Result
 from pydpiper.core.files import FileAtom
 from pydpiper.execution.application import mk_application
 
-from tissue_vision.reconstruction import TV_stitch_wrap
-from tissue_vision.arguments import TV_stitch_parser
+from core.reconstruction import TV_stitch_wrap
+from core.arguments import TV_stitch_parser
 
 def find_mosaic_file(row) -> str:
     if len(sorted(Path(row.brain_directory).glob("Mosaic*txt"))) > 1:
